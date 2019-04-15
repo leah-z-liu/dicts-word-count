@@ -27,8 +27,10 @@ def get_word_counts(file_name):
 
                 word_count_dict[word] = word_count_dict.get(word, 0) + 1
 
-    for pair in word_count_dict.items():
-        print(pair[0], pair[1])
+    for word,count in word_count_dict.items():
+        print(word, count)
+
+
 
 get_word_counts('test.txt')
 
